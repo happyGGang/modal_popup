@@ -1,4 +1,4 @@
-body .scroll_lock {
+body.scroll_lock {
   overflow: hidden;
   height: 100%;
 }
@@ -40,7 +40,7 @@ button {
   overflow: hidden;
 }
 
-.modal .show{
+.modal.show{
   display: block;
 }
 
