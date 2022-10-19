@@ -6,9 +6,9 @@
 
   const $button = get('.modal_open_button')
   const $modal = get('.modal')
+  const $modalConfirmButton = get('.modal_button.confirm')
+  const $modalCancelButton = get('.modal_button.cancel')
   const $body = get('body')
-  const $modalCancelButton = get('.modal_button cance')
-  const $modalConfirmButton = get('.modal_button confirm')
 
   const toggleModal = () => {
     $modal.classList.toggle('show')
@@ -21,7 +21,6 @@
 
   $modalConfirmButton.addEventListener('click', () => {
     toggleModal()
-    console.log('confirm');
   })
 
   $modalCancelButton.addEventListener('click', () => {
@@ -29,7 +28,7 @@
   })
 
   window.addEventListener('click', (e) => {
-    if(e.target === $modal) {
+    if (e.target === $modal) {
       toggleModal()
     }
   })
